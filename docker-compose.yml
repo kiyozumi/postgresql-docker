@@ -1,0 +1,13 @@
+services:
+  postgresql:
+    image: postgres:latest
+    container_name: postgres_container
+    ports:
+      - 5433:5432
+    environment:
+      TZ: ${TZ}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+    restart: always
