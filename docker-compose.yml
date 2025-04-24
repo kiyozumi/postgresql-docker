@@ -3,7 +3,7 @@ services:
     image: postgres:latest
     container_name: postgres_container
     ports:
-      - 5433:5432
+      - ${POSTGRES_PORT}:5432
     environment:
       TZ: ${TZ}
       POSTGRES_USER: ${POSTGRES_USER}
