@@ -20,7 +20,7 @@ You can connect to PostgreSQL with the following settings in your favourite DB c
 | ITEM       | VALUE     |
 |------------|-----------|
 | Host       | localhost |
-| Port       | 3307      |
+| Port       | 5433      |
 | User       | postgres  |
 | Password   | postgres  |
 | Datebase   | postgres  |
@@ -30,6 +30,6 @@ You can connect to PostgreSQL with the following settings in your favourite DB c
 
 # Note
 
-If MySQL or MariaDB is running in localhost, the port number is changed to 3307 to avoid duplication.
+Edit the .env file if needed.
 
 
